@@ -1,0 +1,58 @@
+{
+  "include_patterns": [
+    "**/*.md"
+  ],
+  "exclude_patterns": [
+    "**/.backup_*",
+    "**/__pycache__",
+    "**/.git",
+    "**/.vscode",
+    "**/node_modules",
+    "**/.env",
+    "**/*.pyc",
+    "**/*.pyo",
+    "**/build",
+    "**/dist",
+    "**/.pytest_cache",
+    "**/coverage",
+    "**/.coverage"
+  ],
+  "link_patterns": [
+    "\\[([^\\]]*)\\]\\(([^)]+)\\)",
+    "\\[See details in ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[See project details in ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[Read more in ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[View ([^]]+\\.md)\\]\\(([^)]+)\\)"
+  ],
+  "similarity_threshold": 0.6,
+  "max_backup_files": 500,
+  "generate_report": true,
+  "fix_broken_links": true,
+  "fix_mismatched_text": true,
+  "custom_replacements": {
+    "README.md": "README.md",
+    "readme.md": "README.md"
+  },
+  "project_specific": {
+    "learning_plan": {
+      "topic_directories": [
+        "01_C_CPP_Core_Programming",
+        "02_Networking_Protocols",
+        "03_Debugging_Performance",
+        "04_Systems_Programming",
+        "05_Build_Systems_Tools",
+        "06_Testing_Frameworks",
+        "07_Graphics_UI_Programming",
+        "08_Machine_Learning_AI",
+        "09_Parallel_Computing",
+        "10_Robotics_Automotive",
+        "11_Cloud_Distributed_Systems",
+        "12_Industry_Protocols"
+      ]
+    },
+    "documentation": {
+      "api_docs_pattern": "**/api/**/*.md",
+      "user_docs_pattern": "**/docs/**/*.md"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "include_patterns": [
+    "**/*.md"
+  ],
+  "exclude_patterns": [
+    "**/.backup_*",
+    "**/__pycache__",
+    "**/.git",
+    "**/.vscode",
+    "**/node_modules",
+    "**/.env",
+    "**/*.pyc",
+    "**/*.pyo",
+    "**/SmartMDTool",
+    "**/.pytest_cache",
+    "**/coverage",
+    "**/.coverage"
+  ],
+  "link_patterns": [
+    "\\[([^\\]]*)\\]\\(([^)]+)\\)",
+    "\\[See details in ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[See project details in ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[Read more in ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[View ([^]]+\\.md)\\]\\(([^)]+)\\)",
+    "\\[Check out ([^]]+\\.md)\\]\\(([^)]+)\\)"
+  ],
+  "similarity_threshold": 0.6,
+  "max_backup_files": 1000,
+  "generate_report": true,
+  "fix_broken_links": true,
+  "fix_mismatched_text": true,
+  "project_info": {
+    "name": "LearnPlan",
+    "description": "Comprehensive technology learning plan with structured modules",
+    "main_topics": [
+      "01_C_CPP_Core_Programming",
+      "02_Networking_Protocols",
+      "03_Debugging_Performance",
+      "04_Systems_Programming",
+      "05_Build_Systems_Tools",
+      "06_Testing_Frameworks",
+      "07_Graphics_UI_Programming",
+      "08_Machine_Learning_AI",
+      "09_Parallel_Computing",
+      "10_Robotics_Automotive",
+      "11_Cloud_Distributed_Systems",
+      "12_Industry_Protocols"
+    ]
+  },
+  "file_naming_conventions": {
+    "topic_files": "\\d{2}_[A-Za-z_]+\\.md",
+    "project_files": "Project_\\d{2}_[A-Za-z_]+\\.md",
+    "readme_files": "README\\.md"
+  },
+  "custom_validations": {
+    "check_topic_structure": true,
+    "validate_project_links": true,
+    "ensure_readme_presence": true
+  }
+}
